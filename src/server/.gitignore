@@ -1,4 +1,3 @@
-# Private
 mysqlpasswd
-# Logs
-log.txt
+data.json
+node_modules/
