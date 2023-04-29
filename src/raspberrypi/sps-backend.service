@@ -1,0 +1,13 @@
+[Unit]
+Description=Smart Parking System Server
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/var/sps
+ExecStart=/usr/bin/npm /var/sps/main.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

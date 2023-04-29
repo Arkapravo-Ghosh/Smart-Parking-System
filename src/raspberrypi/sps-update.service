@@ -1,0 +1,14 @@
+[Unit]
+Description=Smart Parking System Config Updater
+
+[Service]
+Type=simple
+User=root
+Group=root
+StartLimitBurst=0
+WorkingDirectory=/var/sps
+ExecStart=/usr/bin/bash /var/sps/sps-update.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

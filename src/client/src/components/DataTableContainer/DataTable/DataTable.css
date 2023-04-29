@@ -1,0 +1,48 @@
+.table__container {
+    border: none;
+    width: 380px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #313131;
+    opacity: 0.79;
+    text-align: center;
+}
+
+td {
+    background-color: #505B64;
+    opacity: 0.73;
+    border-top: 2px solid #ffffff;
+    text-align: left;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+.stat {
+    padding: 0px 30px;
+}
+
+.num {
+    border-right: #ffffff 2px solid;
+}
+
+@media screen and (max-width: 600px) {
+    .table__container {
+        width: 300px;
+    }
+}

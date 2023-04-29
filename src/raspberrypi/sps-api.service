@@ -1,0 +1,15 @@
+[Unit]
+Description=Smart Parking System API Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+StartLimitBurst=0
+WorkingDirectory=/var/sps
+ExecStart=/usr/bin/npm start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

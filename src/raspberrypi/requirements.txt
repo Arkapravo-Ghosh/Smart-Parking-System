@@ -1,0 +1,4 @@
+RPi.GPIO
+flask
+flask-restful
+flask-cors
