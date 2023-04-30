@@ -3,17 +3,15 @@ const fs = require('fs');
 
 let pins = [];
 
-// Read the config file and initialize the pins array
 try {
   const data = fs.readFileSync('/etc/sps-pins.conf', 'utf8');
-  const pinStrings = data.split('\n').filter(str => str.trim() !== ''); // Strip empty lines
-  pins = pinStrings.map(str => parseInt(str, 10)); // Parse pin numbers as integers
+  const pinStrings = data.split('\n').filter(str => str.trim() !== '');
+  pins = pinStrings.map(str => parseInt(str, 10));
 } catch (err) {
   console.error(`Error reading /etc/sps-pins.conf: ${err}`);
 }
 
 function main() {
-  // Set up input pins
   for (const pin of pins) {
     rpio.open(pin, rpio.INPUT);
   }
