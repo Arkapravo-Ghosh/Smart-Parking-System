@@ -5,6 +5,10 @@ if [ "$EUID" -ne 0 ]
 fi
 echo "Deploying server..."
 echo "Installing dependencies..."
+if ! [ -x "$(command -v inotifywait)" ]; then
+  echo "Installing inotify-tools..."
+  apt-get install -y inotify-tools
+fi
 npm i
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo "Creating symlink..."
