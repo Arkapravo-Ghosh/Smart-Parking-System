@@ -52,6 +52,10 @@ cd sps
 ```bash
 npm i
 ```
+- Install `inotify-tools`
+```bash
+apt install -y inotify-tools
+```
 - Copy the systemd service file to `/etc/systemd/system`
 ```bash
 cp *.service /etc/systemd/system/
