@@ -7,7 +7,7 @@ User=root
 Group=root
 StartLimitBurst=0
 WorkingDirectory=/var/sps
-ExecStart=/usr/bin/npm /var/sps/main.js
+ExecStart=/usr/bin/node /var/sps/main.js
 Restart=on-failure
 
 [Install]
