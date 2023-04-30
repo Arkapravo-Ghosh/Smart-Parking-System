@@ -7,7 +7,8 @@
 - NodeJS LTS Hydrogen (v18.16.0)
 
 ## Installation Steps
-
+- [Backend](INSTALLATION.md#backend)
+- [Frontend](INSTALLATION.md#frontend)
 ## Backend
 > **Note:** This is required to be run on the Raspberry Pi. Root privileges are necessary for all the steps.
 
