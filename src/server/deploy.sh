@@ -24,5 +24,5 @@ systemctl daemon-reload
 echo "Enabling services..."
 systemctl enable sps-backend sps-update sps-api
 echo "Starting services..."
-systemctl start sps-backend sps-update sps-api
+systemctl restart sps-backend sps-update sps-api
 echo "Done!"
