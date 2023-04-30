@@ -5,6 +5,7 @@ Description=Smart Parking System Server
 Type=simple
 User=root
 Group=root
+StartLimitBurst=0
 WorkingDirectory=/var/sps
 ExecStart=/usr/bin/npm /var/sps/main.js
 Restart=on-failure
