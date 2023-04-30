@@ -6,3 +6,4 @@ fi
 npm run build
 rm -rf /var/www/html/*
 cp -r dist/* /var/www/html/
+chown -R www-data:www-data /var/www/html
