@@ -9,7 +9,7 @@
 </div>
 
 # Description
-This is a Smart Parking System that has capabilities to dynamically detect the number of available parking slots in a parking lot based on a config file and show status of the slots through a website by using IR Sensors. The system is built using Raspberry Pi, NodeJS, ExpressJS, and ReactJS.
+This is a Smart Parking System that has capabilities to dynamically detect the number of available parking slots in a parking lot based on a config file and show status of the slots through a website by using IR Sensors. The system is built using Raspberry Pi, Node JS, Express JS, and React JS.
 
 # Web UI
 
