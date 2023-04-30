@@ -21,7 +21,7 @@ sudo -i
 ```bash
 git clone https://github.com/Arkapravo-Ghosh/Smart-Parking-System.git
 ```
-- Navigate to the server directory
+- Navigate to the `server` directory
 ```bash
 cd Smart-Parking-System/src/server
 ```
@@ -83,7 +83,7 @@ The API will now be available at `http://localhost:333/api`
 ```bash
 git clone https://github.com/Arkapravo-Ghosh/Smart-Parking-System.git
 ```
-- Navigate to the client directory
+- Navigate to the `client` directory
 ```bash
 cd Smart-Parking-System/src/client
 ```
