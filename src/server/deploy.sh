@@ -9,6 +9,10 @@ npm i
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo "Creating symlink..."
 ln -s $DIR /var/sps
+if [ ! -f "/etc/sps-pins.conf" ]; then
+  echo "Creating default pin configuration..."
+  echo "15" > /etc/sps-pins.conf
+fi
 echo "Copying service files..."
 cp $DIR/*.service /etc/systemd/system/
 echo "Reloading services..."
