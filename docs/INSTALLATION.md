@@ -24,8 +24,8 @@ cd Smart-Parking-System/src/server
 ```bash
 ./deploy.sh
 ```
-- Connect the IR Sensors to the Raspberry Pi according to the config file and it should work as expected. If you want to change the config file, you can do so by editing `/etc/sps-pins.json` and it will be updated automatically.\
-For example, if you want Pin 15 (GPIO 22) and Pin 16 (GPIO 23), `/etc/sps-pins.json` should look like this:
+- Connect the IR Sensors to the Raspberry Pi according to the config file and it should work as expected. If you want to change the config file, you can do so by editing `/etc/sps-pins.conf` and it will be updated automatically.\
+For example, if you want Pin 15 (GPIO 22) and Pin 16 (GPIO 23), `/etc/sps-pins.conf` should look like this:
 ```
 15
 16
