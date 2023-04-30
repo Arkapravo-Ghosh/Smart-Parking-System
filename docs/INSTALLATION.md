@@ -55,7 +55,7 @@ cd Smart-Parking-System/src/client
 ```bash
 ./deploy.sh
 ```
-> **NOTE:** This script will ask for APU_URL. If the IP Address of the Raspberry Pi is `XXX.XXX.XX.XX`, then the API URL will be `http://XXX.XXX.XX.XX:333/api`.
+> **NOTE:** This script will ask for APU_URL. If the IP Address of the Raspberry Pi is `XXX.XXX.XX.XX`, then the API_URL will be `http://XXX.XXX.XX.XX:333/api`.
 
 The frontend will be available at `http://localhost`.
 > **NOTE:** The frontend is accessible to anyone on the network who knows the IP address of the machine.
