@@ -8,7 +8,7 @@ echo "Installing dependencies..."
 npm i
 echo -n "Enter API_URL: "
 read API_URL
-echo "API_URL=$API_URL" > .env
+echo "VITE_API_URL=$API_URL" > .env
 echo "Building client..."
 npm run build
 echo "Removing old files..."
