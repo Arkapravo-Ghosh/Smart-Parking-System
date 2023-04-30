@@ -3,10 +3,10 @@ import "./DataTable.css"
 
 function FetchData() {
   const [data, setData] = useState([]);
-
+  const api = import.meta.env.VITE_API_URL;
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://192.168.29.5:333/api/", {
+      fetch(api, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
