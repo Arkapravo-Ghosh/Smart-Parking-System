@@ -14,7 +14,7 @@ This is a Smart Parking System that has capabilities to dynamically detect the n
 # Web UI
 
 <div align=center>
-    <img width=600 src="docs/images/frontend.png">
+    <img width=500 src="docs/images/frontend.png">
 </div>
 
 # Installation
