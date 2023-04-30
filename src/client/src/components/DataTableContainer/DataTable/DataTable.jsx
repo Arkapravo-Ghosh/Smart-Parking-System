@@ -6,7 +6,7 @@ function FetchData() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://192.168.29.5/api/", {
+      fetch("http://192.168.29.5:333/api/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
