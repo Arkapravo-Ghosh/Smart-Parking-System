@@ -6,8 +6,8 @@ fi
 echo "Deploying client..."
 echo "Installing dependencies..."
 npm i
-echo "Enter API_URL: "
-read -r API_URL
+echo -n "Enter API_URL: "
+read API_URL
 echo "API_URL=$API_URL" > .env
 echo "Building client..."
 npm run build
