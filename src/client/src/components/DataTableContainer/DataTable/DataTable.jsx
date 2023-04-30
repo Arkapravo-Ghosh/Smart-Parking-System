@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from "framer-motion";
 import "./DataTable.css"
 
 function FetchData() {
@@ -37,7 +38,12 @@ export default function DataTable() {
     full: getStatusString(status),
   }));
   return (
-    <div className="table__container">
+    <motion.div
+      className="table__container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <table>
         <thead>
           <tr>
@@ -48,14 +54,22 @@ export default function DataTable() {
         <tbody>
           {dataArray.map((val, key) => {
             return (
-              <tr key={key}>
-                <td className="num">{val.slot}</td>
-                <td>{val.full}</td>
-              </tr>
+              <AnimatePresence>
+                <motion.tr
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  key={key}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  <td className="num">{val.slot}</td>
+                  <td>{val.full}</td>
+                </motion.tr>
+              </AnimatePresence>
             );
           })}
         </tbody>
       </table>
-    </div>
+    </motion.div>
   );
 }
