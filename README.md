@@ -15,5 +15,7 @@ This is a Smart Parking System that has capabilities to dynamically detect the n
     <img width=500 src="docs/images/frontend_.png">
 </div>
 
+![](https://arkapravo-ghosh.github.io/Smart-Parking-System/)
+
 # Installation
 Installation Guide can be found [here](docs/INSTALLATION.md).
