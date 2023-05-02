@@ -12,7 +12,7 @@ This is a Smart Parking System that has capabilities to dynamically detect the n
 
 # Web UI
 <div align=center>
-    <img width=500 src="docs/images/frontend_.png">
+    <img width=500 src="docs/images/frontend.jpeg">
 </div>
 
 ![](https://arkapravo-ghosh.github.io/Smart-Parking-System/)
