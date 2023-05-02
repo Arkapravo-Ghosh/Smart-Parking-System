@@ -9,7 +9,6 @@ import './styles/App.css'
 import NavBar from './components/NavBar/NavBar'
 import DataTableContainer from './components/DataTableContainer/DataTableContainer'
 import About from './pages/About/About';
-import Loading from './components/Loading/Loading.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
