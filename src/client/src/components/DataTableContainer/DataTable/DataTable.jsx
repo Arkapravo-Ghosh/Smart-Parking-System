@@ -50,30 +50,34 @@ export default function DataTable() {
       exit={{ opacity: 0 }}
     >
       <table>
-        <thead>
-          <tr>
-            <th className="num">Parking Slot No.</th>
-            <th className="stat">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dataArray.map((val, key) => {
-            return (
-              <AnimatePresence>
-                <motion.tr
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  key={key}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  <td className="num">{val.slot}</td>
-                  <td>{val.full}</td>
-                </motion.tr>
-              </AnimatePresence>
-            );
-          })}
-        </tbody>
+        <div className='tableHead'>
+          <thead>
+            <tr>
+              <th className="num">Parking Slot No.</th>
+              <th className="stat">Status</th>
+            </tr>
+          </thead>
+        </div>
+        <div className='tableBody'>
+          <tbody>
+            {dataArray.map((val, key) => {
+              return (
+                <AnimatePresence>
+                  <motion.tr
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    key={key}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                  >
+                    <td className="num">{val.slot}</td>
+                    <td>{val.full}</td>
+                  </motion.tr>
+                </AnimatePresence>
+              );
+            })}
+          </tbody>
+        </div>
       </table>
     </motion.div>
   );
