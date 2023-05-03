@@ -18,14 +18,19 @@ function FetchData() {
           setData(data);
         });
     };
-
     fetchData();
-
     const intervalId = setInterval(fetchData, 500);
-
     return () => clearInterval(intervalId);
   }, []);
   return data;
+  /*
+  const datx = {};
+  for (var i = 1; i <= 300; i++) {
+    datx[i] = Math.floor(Math.random() * 2);
+  }
+  console.log(datx)
+  return datx;
+  */
 }
 
 export default function DataTable() {

@@ -4,6 +4,16 @@
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: scroll;
+}
+
+.table__container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.table__container::-webkit-scrollbar {
+    display: none;
 }
 
 table {
