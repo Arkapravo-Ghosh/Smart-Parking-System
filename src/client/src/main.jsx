@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Footer from "./components/Footer/Footer";
 import "./styles/index.css";
-import Loading from "./components/Loading/Loading.jsx";
+import Loading from "./components/Loading/Loading";
 import { AnimatePresence, motion } from "framer-motion";
 
 function Main() {
