@@ -47,7 +47,6 @@ td {
     background-color: #505B64;
     opacity: 0.73;
     text-align: left;
-    width: 100%;
     border-bottom: 2px solid #ffffff;
 }
 
@@ -68,22 +67,32 @@ th {
     padding: 0px 40px;
 }
 
-.num {
+.num,
+.numx {
     border-right: #ffffff 2px solid;
 }
 
-td {
-    padding-right: 40px;
+.numx {
+    padding-right: 216px;
 }
+
+.full {
+    width: 100%;
+}
+
 
 @media screen and (max-width: 600px) {
     .table__container {
         width: 300px;
     }
-    .stat {
-        padding: 0px 30px;
+    .full {
+        width: unset;
     }
-    td {
-        padding: 10px 15px;
+    .numx {
+        padding-right: 136px;
+    }
+
+    .full {
+        width: 100%;
     }
 }

@@ -22,7 +22,7 @@ function FetchData() {
     const intervalId = setInterval(fetchData, 500);
     return () => clearInterval(intervalId);
   }, []);
-  return data;
+  // return data;
   /*
   const datx = {};
   for (var i = 1; i <= 300; i++) {
@@ -31,6 +31,8 @@ function FetchData() {
   console.log(datx)
   return datx;
   */
+  const datx = {"1": 1};
+  return datx;
 }
 
 export default function DataTable() {
@@ -70,8 +72,8 @@ export default function DataTable() {
                     key={key}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                   >
-                    <td className="num">{val.slot}</td>
-                    <td>{val.full}</td>
+                    <td className="numx">{val.slot}</td>
+                    <td className='full'>{val.full}</td>
                   </motion.tr>
                 </AnimatePresence>
               );
