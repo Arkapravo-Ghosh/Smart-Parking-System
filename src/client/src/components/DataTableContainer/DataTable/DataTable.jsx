@@ -30,9 +30,9 @@ function FetchData() {
   }
   console.log(datx)
   return datx;
-  */
   const datx = {"1": 1};
   return datx;
+  */
 }
 
 export default function DataTable() {
