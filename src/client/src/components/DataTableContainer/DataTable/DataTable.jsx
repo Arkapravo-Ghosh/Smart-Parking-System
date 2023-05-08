@@ -22,7 +22,7 @@ function FetchData() {
     const intervalId = setInterval(fetchData, 500);
     return () => clearInterval(intervalId);
   }, []);
-  // return data;
+  return data;
   /*
   const datx = {};
   for (var i = 1; i <= 300; i++) {
