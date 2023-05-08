@@ -40,7 +40,7 @@ thead {
     overflow-y: scroll;
     z-index: 1;
     position: relative;
-    height: calc(50vh - 10px);
+    max-height: 30vh;
 }
 
 td {
